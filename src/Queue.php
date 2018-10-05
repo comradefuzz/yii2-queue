@@ -81,6 +81,10 @@ abstract class Queue extends Component
     private $pushDelay;
     private $pushPriority;
 
+    /**
+    * @var int default job process timeout
+    */
+    public $processTimeout = 60;
 
     /**
      * @inheritdoc
